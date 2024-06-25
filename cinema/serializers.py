@@ -22,8 +22,6 @@ class ActorSerializer(serializers.ModelSerializer):
 
 
 class MovieSerializer(serializers.ModelSerializer):
-    # genres = GenreSerializer(many=True)
-    # actors = ActorSerializer(many=True)
 
     class Meta:
         model = Movie
@@ -49,8 +47,6 @@ class MovieListSerializer(MovieSerializer):
 
 
 class MovieSessionSerializer(serializers.ModelSerializer):
-    # movie = MovieListSerializer()
-    # cinema_hall = CinemaHallSerializer()
 
     class Meta:
         model = MovieSession
